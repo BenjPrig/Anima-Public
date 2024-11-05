@@ -1,6 +1,6 @@
 if(BUILD_TOOLS)
 
-project(animaT1RelaxometryEstimation)
+project(animaRelaxoT2EPGEstimation)
 
 ## #############################################################################
 ## List Sources
@@ -25,6 +25,7 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   ${ITKIO_LIBRARIES}
+  AnimaRelaxometry
   )
 
 ## #############################################################################

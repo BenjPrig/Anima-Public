@@ -1,6 +1,6 @@
 if(BUILD_TOOLS AND USE_NLOPT AND NLOPT_FOUND)
 
-project(animaT1SERelaxometryEstimation)
+project(animaRelaxoT1SEEstimation)
 
 ## #############################################################################
 ## List Sources

@@ -1,6 +1,6 @@
-if(BUILD_TOOLS)
+if(BUILD_TOOLS AND USE_NLOPT AND NLOPT_FOUND)
 
-project(animaGMMT2RelaxometryEstimation)
+project(animaRelaxoT2Estimation)
 
 ## #############################################################################
 ## List Sources
@@ -25,10 +25,7 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   ${ITKIO_LIBRARIES}
-  AnimaOptimizers
-  ITKOptimizers
   AnimaRelaxometry
-  AnimaSignalSimulation
   ${NLOPT_LIBRARY}
   )
 

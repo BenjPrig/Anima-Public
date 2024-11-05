@@ -1,6 +1,6 @@
 if(BUILD_TOOLS)
 
-project(animaCombinedRelaxometryEstimation)
+project(animaRelaxoT1Estimation)
 
 ## #############################################################################
 ## List Sources
@@ -25,9 +25,6 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   ${ITKIO_LIBRARIES}
-  AnimaOptimizers
-  ${NLOPT_LIBRARY}
-  AnimaRelaxometry
   )
 
 ## #############################################################################
