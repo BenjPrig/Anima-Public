@@ -1,2 +1,0 @@
-add_subdirectory(local_patch_covariance_distance)
-add_subdirectory(local_patch_mean_distance)

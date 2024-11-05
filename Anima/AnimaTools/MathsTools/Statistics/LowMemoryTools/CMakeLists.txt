@@ -1,0 +1,2 @@
+add_subdirectory(LocalPatchCovarianceDistance)
+add_subdirectory(LocalPatchMeanDistance)

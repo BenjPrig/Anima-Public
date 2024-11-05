@@ -1,0 +1,4 @@
+add_subdirectory(CreateGridFromPixels)
+add_subdirectory(DDI_AveragingOnA_Grid)
+add_subdirectory(DDI_TestAveragingOnRealValue)
+add_subdirectory(RandomDDI_Generator)

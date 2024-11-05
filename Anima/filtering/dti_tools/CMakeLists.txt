@@ -1,2 +1,0 @@
-add_subdirectory(exp_tensors)
-add_subdirectory(log_tensors)

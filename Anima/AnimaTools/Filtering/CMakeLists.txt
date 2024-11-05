@@ -2,5 +2,10 @@
 # Here go the add_subdirectories, no code should be at the root of the project
 ################################################################################
 
-add_subdirectory(Estimation)
-add_subdirectory(Simulation)
+add_subdirectory(BiasCorrection)
+add_subdirectory(Denoising)
+add_subdirectory(DTI_Tools)
+add_subdirectory(KMeansStandardization)
+add_subdirectory(NoiseGenerator)
+add_subdirectory(NyulStandardization)
+add_subdirectory(Regularization)
