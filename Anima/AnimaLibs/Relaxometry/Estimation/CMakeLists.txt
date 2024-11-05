@@ -1,4 +1,4 @@
-project(AnimaSignalSimulation)
+project(AnimaRelaxometryEstimation)
 
 ## #############################################################################
 ## List Sources
@@ -21,9 +21,13 @@ add_library(${PROJECT_NAME}
 ## Link
 ## #############################################################################
 
-target_link_libraries(${PROJECT_NAME}
-  itkvnl
+target_link_libraries(${PROJECT_NAME} PUBLIC
+  AnimaRelaxometrySimulation
+  AnimaIntegration
+  AnimaOptimizers
+  ITKCommon
   )
+
 
 ################################################################################
 # Auto generate the export file for the libs
@@ -40,3 +44,5 @@ generate_export_header(${PROJECT_NAME}
 ## #############################################################################
 
 set_lib_install_rules(${PROJECT_NAME})
+
+

@@ -1,4 +1,3 @@
-add_subdirectory(signal_simulation)
 add_subdirectory(simu_bloch_coherent_gre)
 add_subdirectory(simu_bloch_gre)
 add_subdirectory(simu_bloch_ir_gre)

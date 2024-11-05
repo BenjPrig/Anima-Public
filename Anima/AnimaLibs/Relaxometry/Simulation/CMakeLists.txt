@@ -1,4 +1,4 @@
-project(AnimaMCMSimilarity)
+project(AnimaRelaxometrySimulation)
 
 ## #############################################################################
 ## List Sources
@@ -8,8 +8,9 @@ list_source_files(${PROJECT_NAME}
   ${CMAKE_CURRENT_SOURCE_DIR}
   )
 
+
 ## #############################################################################
-## add executable
+## add lib
 ## #############################################################################
 
 add_library(${PROJECT_NAME}
@@ -20,11 +21,8 @@ add_library(${PROJECT_NAME}
 ## Link
 ## #############################################################################
 
-target_link_libraries(${PROJECT_NAME}
-  ${ITK_TRANSFORM_LIBRARIES}
-  AnimaMCMBase
-  AnimaMCM
-  ITKOptimizers
+target_link_libraries(${PROJECT_NAME} PUBLIC
+  itkvnl
   )
 
 ################################################################################
@@ -36,12 +34,9 @@ generate_export_header(${PROJECT_NAME}
   EXPORT_FILE_NAME "${CMAKE_BINARY_DIR}/exports/${PROJECT_NAME}Export.h"
   )
 
+
 ## #############################################################################
 ## install
 ## #############################################################################
 
 set_lib_install_rules(${PROJECT_NAME})
-
-if (BUILD_TESTING)
-  add_subdirectory(mcm-measure-test)
-endif()
