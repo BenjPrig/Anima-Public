@@ -1,6 +1,6 @@
 if(BUILD_TOOLS)
 
-project(animaSimuBlochIR-SE)
+project(animaRelaxoSimuBlochIR-SE)
 
 ## #############################################################################
 ## List Sources
