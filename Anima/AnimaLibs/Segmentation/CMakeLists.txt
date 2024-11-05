@@ -1,4 +1,4 @@
-project(AnimaGraphCutSegmentation)
+project(AnimaSegmentation)
 
 ## #############################################################################
 ## List Sources
